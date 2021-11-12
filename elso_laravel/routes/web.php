@@ -49,4 +49,25 @@ Route::get('/naptar/ma', function () {
     $date = new DateTime();
     return format($date);
 });
+function format(DateTime $date){
+    return $date->format('Y-m-d');
+}
+
+Route::get('/naptar/holnap', function () {
+    $tomorrow = new DateTime();
+    $tomorrow->add(new DateInterval('P1D'));
+    return format2($tomorrow);
+});
+function format2(DateTime $date){
+    return $date->format('Y-m-d');
+}
+
+Route::get('/naptar/tegnap', function () {
+    $yesterday = new DateTime();
+    $yesterday->sub(new DateInterval('P1D'));
+    return format3($yesterday);
+});
+function format3(DateTime $date){
+    return $date->format('Y-m-d');
+}
 

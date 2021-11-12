@@ -19,6 +19,8 @@
 </ul>
 <ul>
     <li><a href="/naptar/ma">Mai dátum</a></li>
+    <li><a href="/naptar/holnap">Holnapi dátum</a></li>
+    <li><a href="/naptar/tegnap">Tegnapi dátum</a></li>
 </ul>
 </body>
 </html>
