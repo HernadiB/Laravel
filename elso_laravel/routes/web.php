@@ -46,5 +46,7 @@ Route::get('/harry-potter/hermione', function () {
 });
 
 Route::get('/naptar/ma', function () {
-    return ;
+    $date = new DateTime();
+    return format($date);
 });
+
