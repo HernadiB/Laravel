@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/doctor-house2', function () {
+Route::get('/doctor-house', function () {
     return "Nemcsak az emberek megalázásával lehet a gőzt kiereszteni; mondják,
     hogy a bowling jobb még ennél is.";
 });
