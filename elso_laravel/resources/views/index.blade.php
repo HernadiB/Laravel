@@ -30,5 +30,10 @@
 <ul>
     <li><a href="/ahetnapja">Naptár</a></li>
 </ul>
+
+<h1>Családok</h1>
+<ul>
+    <li><a href="<?= route("mezga")?>">Mézga család</a></li>
+</ul>
 </body>
 </html>

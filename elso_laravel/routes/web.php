@@ -97,3 +97,27 @@ Route:: get('/ahetnapja/{eredmeny}', function ($nap){
     default : return 'A hét napjához adja meg a sorászámát (1 és 7 közötti szám)';
     }
     });
+
+    Route::get('/mezga', function () {
+        return view('mezga');
+    })->name("mezga");
+
+    Route::get('/mezga/geza', function () {
+        return view('mezga-geza');
+    })->name("mezga.geza");
+
+    Route::get('/mezga/paula', function () {
+        return view('mezga-paula');
+    })->name("mezga.paula");
+
+    Route::get('/mezga/kriszta', function () {
+        return view('mezga-kriszta');
+    })->name("mezga.kriszta");
+
+    Route::get('/mezga/aladar', function () {
+        return view('mezga-aladar');
+    })->name("mezga.aladar");
+
+    Route::get('/mezga/MZ', function () {
+        return view('mezga-Mz');
+    })->name("mezga.MZ");
