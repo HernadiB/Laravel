@@ -125,3 +125,23 @@ Route:: get('/ahetnapja/{eredmeny}', function ($nap){
     Route::get('/family', function () {
         return view('family');
     })->name("family");
+
+    Route::get('/family/petergriffin', function () {
+        return view('peter-griffin');
+    })->name("peter.griffin");
+
+    Route::get('/family/loisgriffin', function () {
+        return view('lois-griffin');
+    })->name("lois.griffin");
+
+    Route::get('/family/chrisgriffin', function () {
+        return view('chris-griffin');
+    })->name("chris.griffin");
+
+    Route::get('/family/stewiegriffin', function () {
+        return view('stewie-griffin');
+    })->name("stewie.griffin");
+
+    Route::get('/family/meggriffin', function () {
+        return view('meg-griffin');
+    })->name("meg.griffin");
