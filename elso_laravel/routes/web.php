@@ -121,3 +121,7 @@ Route:: get('/ahetnapja/{eredmeny}', function ($nap){
     Route::get('/mezga/MZ', function () {
         return view('mezga-Mz');
     })->name("mezga.MZ");
+
+    Route::get('/family', function () {
+        return view('family');
+    })->name("family");

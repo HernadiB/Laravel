@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="text-center bg-primary">Mézga Paula</h1>
+                <h1 class="text-center bg-success">Mézga Paula</h1>
             </div>
         </div>
         <div class="row">

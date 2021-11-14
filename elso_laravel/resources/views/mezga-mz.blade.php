@@ -13,18 +13,18 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="text-center bg-primary">MZ/X</h1>
+                <h1 class="text-center bg-dark">MZ/X</h1>
             </div>
         </div>
         <div class="row">
             <div class="col text-center">
-                <?php $url = asset('images/mezga/mezgageza.jpg')?>
+                <?php $url = asset('images/mezga/mzx.jpg')?>
                 <img src="<?= $url?>" alt="">
             </div>
         </div>
         <div class="row">
             <div class="col text-center">
-                <p>MZ/X (Öcsi) Mézga Géza köbükunokája, aki az időszámításunk szerinti 30. században él. Az első sorozatban Aladár egy régi rádiót alakít át adó-vevővé, ennek segítségével lépnek először kapcsolatba vele. MZ/X egy gondolatátvivő kézi készülék, az úgynevezett időkibővítő segítségével tud Mézgáékkal szót érteni, akik másképp nem értenék az újmagyar nyelvet, amit MZ/X beszél. A 30. századi tárgyakat fénypostával küldi el Mézgáéknak ajándékba – s ezek a (rendszerint még ki nem nyitott) ablakon keresztül érkeznek. A család igényeit nem tudja kielégíteni. Az utolsó részben már Paula is beszél MZ/X-szel. MZ/X hangja Somogyvári Rudolf.[10] </p>
+                <p>MZ/X (Öcsi) Mézga Géza köbükunokája, aki az időszámításunk szerinti 30. században él. Az első sorozatban Aladár egy régi rádiót alakít át adó-vevővé, ennek segítségével lépnek először kapcsolatba vele. MZ/X egy gondolatátvivő kézi készülék, az úgynevezett időkibővítő segítségével tud Mézgáékkal szót érteni, akik másképp nem értenék az újmagyar nyelvet, amit MZ/X beszél. A 30. századi tárgyakat fénypostával küldi el Mézgáéknak ajándékba – s ezek a (rendszerint még ki nem nyitott) ablakon keresztül érkeznek. A család igényeit nem tudja kielégíteni. Az utolsó részben már Paula is beszél MZ/X-szel. MZ/X hangja Somogyvári Rudolf.</p>
             </div>
         </div>
     </div>

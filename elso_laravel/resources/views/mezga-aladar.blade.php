@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="text-center bg-primary">Mézga Aladár</h1>
+                <h1 class="text-center bg-danger">Mézga Aladár</h1>
             </div>
         </div>
         <div class="row">
