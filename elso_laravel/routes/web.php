@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/doctor-house2', function () {
+Route::get('/doctor-house', function () {
     return "Nemcsak az emberek megalázásával lehet a gőzt kiereszteni; mondják,
     hogy a bowling jobb még ennél is.";
 });
@@ -145,3 +145,23 @@ Route::get('/family/stewiegriffin', function () {
 Route::get('/family/meggriffin', function () {
     return view('meg-griffin');
 })->name("meg.griffin");
+
+Route::get('/simpson', function () {
+    return view('simpson');
+})->name("simpson");
+
+Route::get('/simpson/bart', function () {
+    return view('bart');
+})->name("bart");
+
+Route::get('/simpson/homer', function () {
+    return view('homer');
+})->name("homer");
+
+Route::get('/simpson/lisa', function () {
+    return view('lisa');
+})->name("lisa");
+
+Route::get('/simpson/marge', function () {
+    return view('marge');
+})->name("marge");

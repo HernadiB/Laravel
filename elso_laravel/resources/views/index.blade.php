@@ -33,8 +33,9 @@
 
 <h1>Családok</h1>
 <ul>
-    <li><a href="<?= route("mezga")?>">Mézga család</a></li>
     <li><a href="<?= route("family")?>">Family Guy</a></li>
+    <li><a href="<?= route("simpson")?>">Simpson</a></li>
+    <li><a href="<?= route("mezga")?>">Mézga család</a></li>
 </ul>
 </body>
 </html>
