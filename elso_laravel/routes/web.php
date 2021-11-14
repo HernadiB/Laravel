@@ -98,50 +98,50 @@ Route:: get('/ahetnapja/{eredmeny}', function ($nap){
     }
     });
 
-    Route::get('/mezga', function () {
-        return view('mezga');
-    })->name("mezga");
+Route::get('/mezga', function () {
+    return view('mezga');
+})->name("mezga");
 
-    Route::get('/mezga/geza', function () {
-        return view('mezga-geza');
-    })->name("mezga.geza");
+Route::get('/mezga/geza', function () {
+    return view('mezga-geza');
+})->name("mezga.geza");
 
-    Route::get('/mezga/paula', function () {
-        return view('mezga-paula');
-    })->name("mezga.paula");
+Route::get('/mezga/paula', function () {
+    return view('mezga-paula');
+})->name("mezga.paula");
 
-    Route::get('/mezga/kriszta', function () {
-        return view('mezga-kriszta');
-    })->name("mezga.kriszta");
+Route::get('/mezga/kriszta', function () {
+    return view('mezga-kriszta');
+})->name("mezga.kriszta");
 
-    Route::get('/mezga/aladar', function () {
-        return view('mezga-aladar');
-    })->name("mezga.aladar");
+Route::get('/mezga/aladar', function () {
+    return view('mezga-aladar');
+})->name("mezga.aladar");
 
-    Route::get('/mezga/MZ', function () {
-        return view('mezga-Mz');
-    })->name("mezga.MZ");
+Route::get('/mezga/MZ', function () {
+    return view('mezga-Mz');
+})->name("mezga.MZ");
 
-    Route::get('/family', function () {
-        return view('family');
-    })->name("family");
+Route::get('/family', function () {
+    return view('family');
+})->name("family");
 
-    Route::get('/family/petergriffin', function () {
-        return view('peter-griffin');
-    })->name("peter.griffin");
+Route::get('/family/petergriffin', function () {
+    return view('peter-griffin');
+})->name("peter.griffin");
 
-    Route::get('/family/loisgriffin', function () {
-        return view('lois-griffin');
-    })->name("lois.griffin");
+Route::get('/family/loisgriffin', function () {
+    return view('lois-griffin');
+})->name("lois.griffin");
 
-    Route::get('/family/chrisgriffin', function () {
-        return view('chris-griffin');
-    })->name("chris.griffin");
+Route::get('/family/chrisgriffin', function () {
+    return view('chris-griffin');
+})->name("chris.griffin");
 
-    Route::get('/family/stewiegriffin', function () {
-        return view('stewie-griffin');
-    })->name("stewie.griffin");
+Route::get('/family/stewiegriffin', function () {
+    return view('stewie-griffin');
+})->name("stewie.griffin");
 
-    Route::get('/family/meggriffin', function () {
-        return view('meg-griffin');
-    })->name("meg.griffin");
+Route::get('/family/meggriffin', function () {
+    return view('meg-griffin');
+})->name("meg.griffin");
