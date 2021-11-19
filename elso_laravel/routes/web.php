@@ -118,9 +118,9 @@ Route::get('/mezga/aladar', function () {
     return view('mezga-aladar');
 })->name("mezga.aladar");
 
-Route::get('/mezga/MZ', function () {
-    return view('mezga-Mz');
-})->name("mezga.MZ");
+Route::get('/mezga/mezga-mz', function () {
+    return view('mezga-mz');
+})->name("mezga.mz");
 
 Route::get('/family', function () {
     return view('family');

@@ -18,7 +18,7 @@
     <a class="btn btn-success" href="<?=route("mezga.paula")?>">Mézga Paula</a>
     <a class="btn btn-secondary" href="<?=route("mezga.kriszta")?>">Mézga Kriszta</a>
     <a class="btn btn-danger" href="<?=route("mezga.aladar")?>">Mézga Aladár</a>
-    <a class="btn btn-dark" href="<?=route("mezga.MZ")?>">MZ/X</a>
+    <a class="btn btn-dark" href="<?=route("mezga.mz")?>">MZ/X</a>
 </div>
 </body>
 </html>
