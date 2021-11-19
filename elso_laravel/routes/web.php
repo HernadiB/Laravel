@@ -178,3 +178,5 @@ Route::get("/horse/table",[\App\Http\Controllers\HorseController::class, "table"
 
 Route::get("/horse/grid",[\App\Http\Controllers\HorseController::class, "grid"])->name("horse.grid");
 
+Route::get("/hangszer/index",[\App\Http\Controllers\HangszerController::class, "index"])->name("hangszer.index");
+
