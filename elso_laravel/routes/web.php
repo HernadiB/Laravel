@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('horse/index');
 });
 
 Route::get('/doctor-house', function () {
@@ -146,6 +146,10 @@ Route::get('/family/meggriffin', function () {
     return view('meg-griffin');
 })->name("meg.griffin");
 
+Route::get('/family/margegriffin', function () {
+    return view('marge-griffin');
+})->name("marge.griffin");
+
 Route::get('/simpson', function () {
     return view('simpson');
 })->name("simpson");
@@ -165,3 +169,12 @@ Route::get('/simpson/lisa', function () {
 Route::get('/simpson/marge', function () {
     return view('marge');
 })->name("marge");
+
+Route::get("/horse",[\App\Http\Controllers\HorseController::class, "index"])->name("home");
+
+Route::get("/horse/list",[\App\Http\Controllers\HorseController::class, "list"])->name("horse.list");
+
+Route::get("/horse/table",[\App\Http\Controllers\HorseController::class, "table"])->name("horse.table");
+
+Route::get("/horse/grid",[\App\Http\Controllers\HorseController::class, "grid"])->name("horse.grid");
+
