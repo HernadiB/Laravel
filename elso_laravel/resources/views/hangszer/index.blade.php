@@ -46,6 +46,7 @@
 </ul>
 <p>Forrás: <a href="https://hu.wikipedia.org/wiki/Muszt%C3%A1ng">Wikipádia</a></p>
 
+<h1>Hangszerek</h1>
 <ul>
     <li><a href="<?= route("hangszer.index")?>">Hangszerek</a></li>
 </ul>
