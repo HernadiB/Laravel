@@ -6,10 +6,9 @@
 @extends("layouts.horsegrid")
 @section("title","USA állam lovak táblázat")
 @section("h1")
-    <h1 class="text center">Az USA államainak nemzeti lovai (Táblázat)</h1>
+    <h1 class="text-center my-5">Az USA államainak nemzeti lovai (Táblázat)</h1>
 @endsection
 @section("content")
-    <h1>Az USA államainak nemzeti lovai (Táblázat)</h1>
     <div class="container">
             <table class="table table-responsive table-striped">
                 <th>Állam</th>

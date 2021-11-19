@@ -7,7 +7,7 @@
 @extends("layouts.horselist")
 @section("title", "USA lovak felsorolás")
 @section("h1")
-    <h1>Az USA államainak nemzeti lovai (Felsorolás)</h1>
+    <h1 class="text-center my-5">Az USA államainak nemzeti lovai (Felsorolás)</h1>
 @endsection
 @section("content")
     <div class="container">
@@ -23,5 +23,5 @@
     </div>
 @endsection
 @section("vissza")
-    <h3><a href="{route('home')}">Vissza</a></h3>
+    <h3><a href="{{route('home')}}">Vissza</a></h3>
 @endsection

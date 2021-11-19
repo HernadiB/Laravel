@@ -6,17 +6,17 @@ use Illuminate\Http\Request;
 class HorseController extends Controller
 {
     public function index(){
-        return view('index');
+        return view('horse/index');
     }
 
     public function list(){
-        return view('list',[
+        return view('horse.list',[
            "tomb" => $this->loadData()
         ]);
     }
 
     public function table(){
-        return view('table',[
+        return view('horse.table',[
             "tomb" => $this->loadData()
         ]);
     }
