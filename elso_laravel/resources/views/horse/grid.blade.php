@@ -16,7 +16,7 @@
                 <div class="horse">
                     <h2><?= $lovak["fajta"]?></h2>
                     <p><?= $lovak["allam"] . " (" . $lovak["ev"] . ")"?></p>
-                    <img src="{{asset("/images/img/" . $lovak["kep"])}}" alt="" class="img-fluid">
+                    <img src="{{asset("/images/usalovak/" . $lovak["kep"])}}" alt="" class="img-fluid">
                     <p><?= $lovak["leiras"]?></p>
                 </div>
             </div>
