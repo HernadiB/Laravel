@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 class HangszerController
 {
     public function index(){
-        return view("hangszer/index",[
+        return view("hangszer.index",[
             "hang" => $this->lData()
         ]);
     }
