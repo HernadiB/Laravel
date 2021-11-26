@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 class HorseController extends Controller
 {
     public function index(){
-        return view('hangszer/index');
+        return view('horse/index');
     }
 
     public function list(){
-        return view('horse.list',[
+        return view('hangszer.list',[
            "tomb" => $this->loadData()
         ]);
     }

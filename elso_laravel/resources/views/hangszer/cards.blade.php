@@ -16,8 +16,8 @@
             <?php foreach ($tomb as $t): ?>
             <div class="col-4">
                 <div class="card">
-                    <?php $url = asset('imghangszerek')?>
-                    <img src="<?= $url ?>/<?= $t["image"]?>" class="img-fluid" alt="kep">
+                    <?php $url = asset('images')?>
+                    <img src="<?= $url ?>/hangszerek/<?= $t["image"]?>" class="img-fluid" alt="kep">
                     <p class="d-block mx-auto mb-3 mt-3 text-decoration-none"><a href="../show/<?= $n ?>"><?= $t["name"] ?></a></p>
                 </div>
             </div>

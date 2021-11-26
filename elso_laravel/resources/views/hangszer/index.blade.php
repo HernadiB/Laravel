@@ -3,8 +3,8 @@
  * @var array[] $tomb hangszerek tombje
  */
 ?>
-@extends("layoutshangszer.main")
-@section("bgcolor", "green")
+@extends("layouts.main")
+@section("bgcolor", "light")
 @section("title", "Index oldal")
 @section("h1")
     <h1 class="text-center">Hangszerek</h1><br>

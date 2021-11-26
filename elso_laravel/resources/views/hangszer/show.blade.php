@@ -13,15 +13,10 @@
     <div class="container">
         <div class="row">
             <div class="col-4">
-                <?php $url=asset("imghangszerek") ?>
-                <img src="<?= $url?>/<?= $tomb["$hangszerId"]["image"]?>" alt="image" class="img-fluid">
+                    <?php $url = asset('images')?>
+                    <img src="<?= $url ?>/hangszerek/<?= $tomb[$hangszerId]["image"]?>" class="img-fluid" alt="kep">
             </div>
             <div class="col-8">
-                {{--                <?php foreach ($tomb["$hangszerId"]["paragraphs"] as $p): ?>--}}
-                {{--                    {--}}
-                {{--                        <p><?= $p ?></p>--}}
-                {{--                    }--}}
-                {{--                <?php endforeach ?>--}}
                 <?php for($i = 0; $i<count($tomb[$hangszerId]["paragraphs"]); $i++): ?>
                 <p><?= $tomb[$hangszerId]["paragraphs"][$i] ?> </p>
                 <?php endfor ?>

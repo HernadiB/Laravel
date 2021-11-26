@@ -15,7 +15,7 @@ class HangszerController extends Controller
             ]);
         }
     }
-    public function show($id){
+    public function show($id = null){
         return view("hangszer.show",[
             "tomb" => $this->loadData(),
             "hangszerId" => $id

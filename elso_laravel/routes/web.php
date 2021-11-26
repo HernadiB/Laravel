@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('hangszer/index');
+    return view('index');
 });
 
 Route::get('/doctor-house', function () {
@@ -45,6 +45,8 @@ Route::get('/harry-potter/hermione', function () {
     is csaphatnak!";
 })->name("harry-potter.hermione");
 
+
+//naptár feladat
 Route::get('/naptar/ma', function () {
     $date = new DateTime();
     return format($date);
@@ -71,6 +73,7 @@ function format3(DateTime $date){
     return $date->format('Y-m-d');
 }
 
+//szamológép feladat
 Route::get('/szamologep/{a}+{b}', function ($a, $b) {
    return $a + $b;
 });
@@ -84,6 +87,8 @@ Route::get('/szamologep/{a}/{b}', function ($a, $b) {
    return $a / $b;
 });
 
+
+//hétnapjai feladat
 Route:: get('/ahetnapja/{eredmeny}', function ($nap){
     switch ($nap){
     case 1: return 'Hétfő';
@@ -98,6 +103,7 @@ Route:: get('/ahetnapja/{eredmeny}', function ($nap){
     }
     });
 
+//mezga feladat
 Route::get('/mezga', function () {
     return view('mezga');
 })->name("mezga");
@@ -122,6 +128,8 @@ Route::get('/mezga/mezga-mz', function () {
     return view('mezga-mz');
 })->name("mezga.mz");
 
+
+//family feladat
 Route::get('/family', function () {
     return view('family');
 })->name("family");
@@ -150,6 +158,8 @@ Route::get('/family/margegriffin', function () {
     return view('marge-griffin');
 })->name("marge.griffin");
 
+
+//simpson feladat
 Route::get('/simpson', function () {
     return view('simpson');
 })->name("simpson");
@@ -170,13 +180,18 @@ Route::get('/simpson/marge', function () {
     return view('marge');
 })->name("marge");
 
-Route::get("/horse",[\App\Http\Controllers\HorseController::class, "index"])->name("home");
+//horse feladat
+//Route::get("/horse",[\App\Http\Controllers\HorseController::class, "index"])->name("home");
 
 Route::get("/horse/list",[\App\Http\Controllers\HorseController::class, "list"])->name("horse.list");
 
 Route::get("/horse/table",[\App\Http\Controllers\HorseController::class, "table"])->name("horse.table");
 
 Route::get("/horse/grid",[\App\Http\Controllers\HorseController::class, "grid"])->name("horse.grid");
+
+
+//hangszer feladat
+//Route::get('/', [\App\Http\Controllers\HangszerController::class,"index"]);
 
 Route::get("/hangszer/{mode?}",[\App\Http\Controllers\HangszerController::class, "index"])->name("home");
 
