@@ -1,7 +1,10 @@
 <?php
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 class HangszerController extends Controller
 {
+    private $headers=[];
+
     public function index($mode = null)
     {
         if($mode == null){

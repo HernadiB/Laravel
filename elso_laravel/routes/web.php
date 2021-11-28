@@ -105,79 +105,79 @@ Route:: get('/ahetnapja/{eredmeny}', function ($nap){
 
 //mezga feladat
 Route::get('/mezga', function () {
-    return view('mezga');
+    return view('mezga.mezga');
 })->name("mezga");
 
 Route::get('/mezga/geza', function () {
-    return view('mezga-geza');
+    return view('mezga.mezga-geza');
 })->name("mezga.geza");
 
 Route::get('/mezga/paula', function () {
-    return view('mezga-paula');
+    return view('mezga.mezga-paula');
 })->name("mezga.paula");
 
 Route::get('/mezga/kriszta', function () {
-    return view('mezga-kriszta');
+    return view('mezga.mezga-kriszta');
 })->name("mezga.kriszta");
 
 Route::get('/mezga/aladar', function () {
-    return view('mezga-aladar');
+    return view('mezga.mezga-aladar');
 })->name("mezga.aladar");
 
 Route::get('/mezga/mezga-mz', function () {
-    return view('mezga-mz');
+    return view('mezga.mezga-mz');
 })->name("mezga.mz");
 
 
 //family feladat
 Route::get('/family', function () {
-    return view('family');
+    return view('familyguy.family');
 })->name("family");
 
 Route::get('/family/petergriffin', function () {
-    return view('peter-griffin');
+    return view('familyguy.peter-griffin');
 })->name("peter.griffin");
 
 Route::get('/family/loisgriffin', function () {
-    return view('lois-griffin');
+    return view('familyguy.lois-griffin');
 })->name("lois.griffin");
 
 Route::get('/family/chrisgriffin', function () {
-    return view('chris-griffin');
+    return view('familyguy.chris-griffin');
 })->name("chris.griffin");
 
 Route::get('/family/stewiegriffin', function () {
-    return view('stewie-griffin');
+    return view('familyguy.stewie-griffin');
 })->name("stewie.griffin");
 
 Route::get('/family/meggriffin', function () {
-    return view('meg-griffin');
+    return view('familyguy.meg-griffin');
 })->name("meg.griffin");
 
 Route::get('/family/margegriffin', function () {
-    return view('marge-griffin');
+    return view('familyguy.marge-griffin');
 })->name("marge.griffin");
 
 
 //simpson feladat
 Route::get('/simpson', function () {
-    return view('simpson');
+    return view('simpson.simpson');
 })->name("simpson");
 
 Route::get('/simpson/bart', function () {
-    return view('bart');
+    return view('simpson.bart');
 })->name("bart");
 
 Route::get('/simpson/homer', function () {
-    return view('homer');
+    return view('simpson.homer');
 })->name("homer");
 
 Route::get('/simpson/lisa', function () {
-    return view('lisa');
+    return view('simpson.lisa');
 })->name("lisa");
 
 Route::get('/simpson/marge', function () {
-    return view('marge');
+    return view('simpson.marge');
 })->name("marge");
 
 //horse feladat
@@ -199,3 +199,4 @@ Route::get("/hangszer/{mode?}",[\App\Http\Controllers\HangszerController::class,
 
 Route::get("/show/{id}",[\App\Http\Controllers\HangszerController::class, "show"])->name("hangszer.show");
 
+Route::get('/search', [CarController::class, "search"])->name("hangszer.search");
