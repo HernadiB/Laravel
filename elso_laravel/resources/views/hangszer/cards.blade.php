@@ -4,7 +4,7 @@
  */
 ?>
 @extends("layouts.main")
-@section("bgcolor", "green")
+@section("bgcolor", "lightgreen")
 @section("title", "Cards oldal")
 @section("h1")
     <h1 class="text-center mb-3">Hangszerek</h1>
