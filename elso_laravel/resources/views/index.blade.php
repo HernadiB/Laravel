@@ -50,5 +50,8 @@
 <ul>
     <li><a href="/hangszer">hangszerek</a></li>
 </ul>
+
+<h1>Könyvek Laravel DB</h1>
+<p>Az url-be /konyvek/"feladat sorszáma"</p>
 </body>
 </html>

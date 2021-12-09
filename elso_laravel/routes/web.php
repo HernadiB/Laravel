@@ -200,3 +200,8 @@ Route::get("/hangszer/{mode?}",[\App\Http\Controllers\HangszerController::class,
 Route::get("/show/{id}",[\App\Http\Controllers\HangszerController::class, "show"])->name("hangszer.show");
 
 Route::get('/search', [CarController::class, "search"])->name("hangszer.search");
+
+
+//konyvek feladat
+
+Route::get("/konyvek/{sorszam}", [\App\Http\Controllers\KonyvekController::class, 'index' ])->name("book")->whereNumber("sorszam");
