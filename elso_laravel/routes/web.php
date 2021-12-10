@@ -205,3 +205,12 @@ Route::get('/search', [CarController::class, "search"])->name("hangszer.search")
 //konyvek feladat
 
 Route::get("/konyvek/{sorszam}", [\App\Http\Controllers\KonyvekController::class, 'index' ])->name("book")->whereNumber("sorszam");
+
+
+//f1 feladat
+
+Route::get("/team/index", [\App\Http\Controllers\TeamController::class, 'index'])->name("team");
+
+Route::get("/team/view/{id}", [\App\Http\Controllers\TeamController::class, 'view'])->name("team.view");
+
+Route::get("/driver/view/{id}", [\App\Http\Controllers\DriverController::class, 'index'])->name("driver.view");
