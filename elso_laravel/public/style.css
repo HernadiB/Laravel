@@ -1,0 +1,17 @@
+body{
+    background-image: url('../img/flag.svg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#nev{
+    text-align: center;
+    margin: auto;
+}
+p{
+    font-size: 20px;
+}
