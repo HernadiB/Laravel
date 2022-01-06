@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Film;
 use App\Models\Univerzum;
 
 class UniverzumController extends Controller
@@ -9,7 +10,7 @@ class UniverzumController extends Controller
     public function index()
     {
         return view('univerzum.index',[
-            "univerzumok" => Univerzum::all()
+            "univerzumok" => Univerzum::all(), "cim" => "Univerzum választása"
         ]);
     }
 
@@ -17,7 +18,7 @@ class UniverzumController extends Controller
     {
         $univerzum = Univerzum::where("id", $id)->firstOrFail();
         return view('univerzum.view',[
-            "univerzum" => $univerzum
+            "univerzum" => $univerzum, "filmek" => Film::all(), "cim" => $univerzum
         ]);
     }
 }

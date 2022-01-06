@@ -2,19 +2,14 @@
 
 @section('content')
 <div class="container">
-    <h1 class="text-center py-3">Univerzum választása</h1>
-
-    <div class="row row-col-6">
-        @foreach($univerzumok as $univerzum)
-            <div class="col-sm-3 align-self-stretch my-3">
-                <div class="card  h-100">
-                    <img src="{{asset("img/brands/{$brand->image}")}}" class="card-img-top" alt="{{$brand->name}}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{$brand->name}}</h5>
-                        <div class="card-text">{{count($brand->teas)}} tea található az adatbázisban</div>
-                        <a href="{{route("brand.show",["slug"=>$brand->slug])}}" class="btn btn-primary align-self-end">Mutasd</a>
-                    </div>
-                </div>
+    <h1 class="text-center py-3">{{$unierzum->name}}</h1>
+    <hr>
+    <div class="row">
+        @foreach($univerzumok as $u)
+            <div class="col-md-6">
+                <h2>{{$u->nev}}</h2>
+                <img class="img-fluid" src="{{asset("img/" . $u->hatter)}}" title="{{$u->nev}}}">
+                <a href="{{route("univerzum.view", ['id' => $u->id])}}}" class="btn btn-primary">{{$u->nev}} filmek</a>
             </div>
         @endforeach
     </div>

@@ -2,12 +2,15 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Film extends Model
 {
+    use HasFactory;
+
     public function univerzum()
     {
-        return $this->hasMany(Univerzum::class, 'id');
+        return $this->belongsTo(Film::class, 'univerzum_id');
     }
 }
