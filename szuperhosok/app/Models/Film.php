@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Univerzum;
 
 class Film extends Model
 {
@@ -11,6 +12,6 @@ class Film extends Model
 
     public function univerzum()
     {
-        return $this->belongsTo(Film::class, 'univerzum_id');
+        return $this->belongsTo(Univerzum::class, 'id');
     }
 }

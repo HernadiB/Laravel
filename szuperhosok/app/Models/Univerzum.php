@@ -4,13 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Film;
 
 class Univerzum extends Model
 {
-    use HasFactory;
+    protected $table = "univerzum";
 
     public function filmek()
     {
-        return $this->hasMany(Univerzum::class, 'id');
+        return $this->hasMany(Film::class, 'univerzum_id');
     }
 }
